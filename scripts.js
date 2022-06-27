@@ -3,7 +3,8 @@ function init() {
     const flightStatus = document.getElementById("flightStatus");
     const shuttleBackground = document.getElementById("shuttleBackground");
     const spaceShuttleHeight = document.getElementById("spaceShuttleHeight");
-
+    const landing = document.getElementById("landing");
+    
 
     takeoff.addEventListener('click', function()    {
         let result = window.confirm("Confirm that the shuttle is ready for takeoff.");
@@ -15,7 +16,14 @@ function init() {
         }
     });
 
-    
+    landing.addEventListener('click', function()    {
+        let result = window.confirm("The shuttle is landing. Landing gear engaged.");
+        if (result) {
+            flightStatus.innerHTML = "The shuttle has landed.";
+            shuttleBackground.style.backgroundColor = "green";
+            spaceShuttleHeight.innerHTML = "0";
+        }
+    });
 
 }
 
