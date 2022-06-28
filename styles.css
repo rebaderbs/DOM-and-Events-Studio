@@ -17,11 +17,20 @@
 }
 
 #spaceShuttleHeight {
+    /* position: absolute; */
     display: inline-block;
 }
 
+/* #rocket {
+    margin-top: 250px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+} */
+
 .center-block {
     text-align: center; 
+    /* position: absolute; */
     display: inline-block;
 }
 
